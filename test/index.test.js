@@ -10,6 +10,15 @@ describe('format', () => {
     const output = format('function foo(){}')
     expect(output).toEqual('function foo () {}\n')
   })
+
+  it('does not put parentheses around single-argument arrow functions', () => {
+    const output = format('a=>a')
+    expect(output).toEqual('a => a\n')
+  })
+
+  it('can handle TypeScript tuple types', () => {
+    format('const tuple: [number, number] = [1, 2]')
+  })
 })
 
 describe('check', () => {

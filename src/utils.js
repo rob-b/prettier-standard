@@ -50,7 +50,8 @@ const defaultOptions = {
   yieldStarSpacing: true,
   singleQuote: true,
   semi: false,
-  jsxSingleQuote: true
+  jsxSingleQuote: true,
+  arrowParens: 'avoid'
 }
 
 function getOptions (options) {
