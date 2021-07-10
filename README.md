@@ -9,12 +9,12 @@ You don't have to fix any whitespace errors and waste time configuring eslint pr
 ## Installation
 
 ```
-yarn add --dev prettier-standard
+yarn add --dev SheepTester/prettier-standard
 ```
 
-> If you're using the [`npm`][npm]: `npm install --save-dev prettier-standard`.
+> If you're using the [`npm`][npm]: `npm install --save-dev SheepTester/prettier-standard`.
 
-> You can also install globally with `npm install -g prettier-standard`
+> You can also install globally with `npm install -g SheepTester/prettier-standard`
 
 ## Usage
 
