@@ -17,7 +17,12 @@ describe('format', () => {
   })
 
   it('can handle TypeScript tuple types', () => {
-    format('const tuple: [number, number] = [1, 2]')
+    format('const tuple: [number, number] = [1, 2]\n')
+  })
+
+  it('does not add trailing commas', () => {
+    const output = format('const wow={\na:2}')
+    expect(output).toEqual('const wow = {\n  a: 2\n}\n')
   })
 })
 

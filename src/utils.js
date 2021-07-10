@@ -25,9 +25,7 @@ function createIgnorer (directory, filename = '.prettierignore') {
   const file = path.join(directory, filename)
   if (fs.existsSync(file)) {
     const text = fs.readFileSync(file, 'utf8')
-    return ignore()
-      .add(text)
-      .createFilter()
+    return ignore().add(text).createFilter()
   }
 
   return () => true
@@ -51,6 +49,7 @@ const defaultOptions = {
   singleQuote: true,
   semi: false,
   jsxSingleQuote: true,
+  trailingComma: 'none',
   arrowParens: 'avoid'
 }
 
